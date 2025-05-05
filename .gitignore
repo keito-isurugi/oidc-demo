@@ -1,0 +1,11 @@
+# root
+.DS_Store
+
+# idp
+idp/tmp
+idp-server
+
+# sp
+sp/tmp
+sp-server
+
