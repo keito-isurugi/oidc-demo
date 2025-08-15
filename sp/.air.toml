@@ -1,8 +1,0 @@
-[build]
-  cmd = "go build -o sp-server main.go"
-  bin = "sp-server"
-  full_bin = "./sp-server"
-  exclude_dir = ["vendor"]
-
-[log]
-  time = true

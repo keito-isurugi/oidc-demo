@@ -1,8 +1,0 @@
-[build]
-  cmd = "go build -o idp-server main.go"
-  bin = "idp-server"
-  full_bin = "./idp-server"
-  exclude_dir = ["vendor"]
-
-[log]
-  time = true
