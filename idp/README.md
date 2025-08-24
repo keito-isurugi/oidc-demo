@@ -15,8 +15,8 @@ GoによるOpenID Connect Provider (OP) の実装デモプロジェクトです�
 
 ### 前提条件
 
-- Go 1.21以上
-- Docker & Docker Compose
+- Go 1.24+ (最新版: Go 1.24.6)
+- Docker 28.0+ & Docker Compose 2.39+
 - Make
 
 ### セットアップ
@@ -160,8 +160,8 @@ REFRESH_TOKEN_TTL=2592000
 
 ### コンテナ構成
 
-- **postgres**: PostgreSQL 15 (データベース)
-- **redis**: Redis 7 (セッションストア)
+- **postgres**: PostgreSQL 17 (データベース - 最新安定版)
+- **redis**: Redis 8 (セッションストア - 最新安定版)
 - **mailhog**: MailHog (開発用メールサーバー) ※オプション
 
 ### Docker Composeコマンド

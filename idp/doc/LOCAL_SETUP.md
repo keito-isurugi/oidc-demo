@@ -3,9 +3,9 @@
 ## 必要なツール
 
 ### 必須
-- **Go**: 1.21以上
-- **Docker**: 20.10以上
-- **Docker Compose**: 2.0以上
+- **Go**: 1.24+ (最新版: Go 1.24.6)
+- **Docker**: 28.0+ (最新版)
+- **Docker Compose**: 2.39+ (最新版)
 - **Make**: GNU Make 3.81以上
 
 ### 推奨
@@ -154,7 +154,7 @@ version: '3.8'
 
 services:
   postgres:
-    image: postgres:15-alpine
+    image: postgres:17-alpine
     container_name: oidc_postgres
     environment:
       POSTGRES_DB: oidc_demo
@@ -172,7 +172,7 @@ services:
       retries: 5
 
   redis:
-    image: redis:7-alpine
+    image: redis:8-alpine
     container_name: oidc_redis
     ports:
       - "6379:6379"

@@ -13,11 +13,11 @@ OpenID Connect仕様に準拠した認証プロバイダー(OP)をGoで実装す
 - 基本的なユーザー管理
 
 ### 1.3 技術スタック
-- 言語: Go 1.21+
-- Webフレームワーク: Gin または Echo
-- JWT: github.com/golang-jwt/jwt/v5
-- データベース: PostgreSQL (開発時はSQLite可)
-- ORM: GORM
+- 言語: Go 1.24+ (最新版: Go 1.24.6)
+- Webフレームワーク: Gin (高性能) または Echo v4 (最新版: v4.13.4)
+- JWT: github.com/golang-jwt/jwt/v5 (最新メジャーバージョン)
+- データベース: PostgreSQL 17+ (最新安定版: 17.6)
+- ORM: GORM v2 (最新版、開発者フレンドリー)
 
 ## 2. アーキテクチャ
 
